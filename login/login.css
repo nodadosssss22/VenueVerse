@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    margin: 0;
+    border: 0;
+}
+
+.img_background {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.main {
+    z-index: 1;
+    width: 100lvw;
+    height: 100lvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halves_container {
+
+    width: 900px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.first_half {
+
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 7% 0% 0% 7%; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector_first_half {
+
+    height: 60%;
+
+}
+
+.second_half {
+
+    width: 60%;
+    height: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_second_half {
+
+    height: 30%;
+
+}

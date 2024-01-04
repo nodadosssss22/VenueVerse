@@ -1,0 +1,299 @@
+@font-face {
+    font-family: rockwell_extrabold;
+    src: url("front_end_fonts/Rockwell-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: canadra;
+    src: url("front_end_fonts/Candara.ttf");
+}
+
+body {
+
+    background-color: black;
+    margin: 0;
+    border: 0;
+    margin-top: 0;
+}
+
+
+div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* #region Top Portion */
+
+.top_portion {
+
+    background-color: #B83B5F;
+    width: 100%;
+    height: 15lvh;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.top_first_half {
+
+    padding-top: 0;
+    padding-left: 2%;
+
+}
+
+.top_second_half {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:3%;
+
+}
+
+.top_portion img {
+
+    height: 95px;
+
+}
+
+.login_butt {
+
+    text-decoration: none;
+    background-color: #F9ED69;
+    height: 100%;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 500%;
+
+    font-family: candara;
+    font-size: 20px;
+}
+
+.login_butt:hover {
+
+    background-color: #fff698;
+
+}
+/* #endrgion Top Portion*/
+
+/* #region Middle Portion*/
+
+.middle_portion {
+
+    background: linear-gradient(
+                                to bottom right, 
+                                rgba(184, 59, 94, 80%), 
+                                rgba(240, 138, 93, 80%),
+                                rgba(249, 237, 105, 80%));
+    width: 100%;
+    height: 65lvh;
+    display: block;
+}
+
+#cycler1 {
+
+    position: fixed;
+    height: 420px;
+    width: 100%;
+    z-index: -1;
+    transition: transform 800ms cubic-bezier(.1,.45,.47,.97);
+
+}
+
+#cycler2 {
+
+    position: fixed;
+    height: 420px;
+    width: 100%;
+    z-index: -2;
+    transform: translateX(100%);
+    transition: transform 800ms cubic-bezier(.1,.45,.47,.97);
+
+}
+
+.middle_portion_content {
+
+    background-color: rgba(0,0,0,0%);
+    height: 370px;
+    width: 100%;
+    display: flex;
+
+}
+
+.left_middle_portion {
+
+    height: 100%;
+    width: 13%;
+
+}
+
+.middle_middle_portion {
+
+    height: 100%;
+    width: 74%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.right_middle_portion {
+
+    height: 100%;
+    width: 13%;
+}
+
+.middle_texts {
+
+    height: 60%;
+    width: 47%;
+    margin: 10px;
+
+    display: inline;
+}
+
+.middle_title { 
+    font-family: rockwell_extrabold;
+    -webkit-text-stroke: 2px #548235;
+    font-size: 42px;
+    color: #F6E6CA;
+}
+
+.middle_text { 
+
+    font-family: canadra;
+    font-size: 25px;
+    color: #F6E6CA;
+}
+
+.circle {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.thumbnail_cycler {
+
+    height: 300px;
+    width: 40%;
+    padding-left: 20px;
+    transition: opacity 0.3s;
+}
+
+.arrows {
+
+    height: 40px;
+
+}
+
+#circle_right {
+
+    background-color: #B83B5F;
+    padding-left: 5px;
+
+}
+
+#circle_left {
+
+    background-color: #F9ED69;
+    padding-right: 5px;
+}
+
+#middle_contents {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* #endregion Middle Portion*/
+
+/* #region Bottom Portion*/
+
+.bottom_portion {
+
+    background-color: #F9ED69;
+    width: 100%;
+    height: 20lvh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.upper_half_bottom {
+    width: 100%;
+    height: 22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper_half_half_bottom {
+
+    width: 100%;
+    height: 22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.bottom_text {
+
+    font-family: canadra;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center; 
+
+}
+
+.bottom_title {
+
+    font-family: rockwell_extrabold;
+    font-size: 35px;
+    color: #548235;
+    text-align: center;
+
+}
+
+.bottom_title_title {
+
+    font-family: rockwell_extrabold;
+    font-size: 35px;
+    color: #F6E6CA;
+    -webkit-text-stroke: 2px #548235;
+    text-align: center;
+
+}
+
+.bottom_half_bottom {
+    width: 100%;
+    height: 55%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:center;
+}
+
+.btm_thumbnails {
+
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 90%;
+}
+
+/* #endregion Bottom Portion*/

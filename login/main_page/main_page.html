@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>VenueVerse</title>
+        <link rel="icon" type="image/x-icon" href = "main_page_images/main_logo.ico">
+        <link rel="stylesheet" href="main_page.css">
+    </head>
+    <body>
+    <img src = "main_page_images/background.png" class="body_image">
+    <div class="main">
+            <div class = "navbar">
+                <div class = "navbar_icon">
+                    <img src="main_page_images/main_logo.png" class = "navbar_icon_actual">
+                </div>
+                <div class = "navbar_links">
+                    <div class = "navbar_wc_bar">
+                        <p class = "welcome_text">Welcome, <strong>User</strong></p> <!-- Change User to name of logged user -->
+                    </div>
+                    <div class = "navbar_lo_bar">
+                        <a href="C:\Users\Carlos\Desktop\VenueVerse\front-end.html" class="logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "main_body">
+            <div class = "left_navbar">
+                <div class = "left_nb_upper">
+                    <a href="#" class = "nb_links">Create Event</a>
+                    <a href="#" class = "nb_links">Scheduled</a>
+                    <a href="#" class = "nb_links">Past Events</a>
+                </div>
+                <div class = "left_nb_lower">
+                    <div class="slideshow">
+                        <span id="slide-1"></span>
+                        <span id="slide-2"></span>
+                        <span id="slide-3"></span>
+                        <span id="slide-4"></span>
+                    <div class="image-container">
+                        <img src="main_page_images/event1.jpg" class = "slide" width="210px" height="150px">
+                        <img src="main_page_images/event2.jpeg" class = "slide" width="210px" height="150px">
+                        <img src="main_page_images/event3.jpg" class = "slide" width="210px" height="150px">
+                        <img src="main_page_images/event4.jpg" class = "slide" width="210px" height="150px">
+                    </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#slide-1" id="slide-1"></a>
+                        <a href="#slide-2" id="slide-2"></a>
+                        <a href="#slide-3" id="slide-3"></a>
+                        <a href="#slide-4" id="slide-4"></a>
+                    </div>
+                </div>
+            </div>
+            <div class = "main_content_handler">
+                <div class = "main_content">
+                    <div class = "mc_create_event">
+                        <p class = "ce_title main_font">Create An Event</p>
+                        <div class = "yay">
+                        <input type="text" class = "ce_event_name ce_elements main_font ce_labels" placeholder="Event Name">
+                        <table class = "date_chooser_table ce_elements">
+                            <tr>
+                                <td class = "label_date main_font">Starting Date:</td>
+                                <td class = "chooser_date">
+                                    <input type="date" class = "fu">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "label_date main_font">Ending Date:</td>
+                                <td class = "chooser_date">
+                                    <input type="date" class = "fu">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class = "ce_guests_range">
+                            <div class = "gr_title">
+                                <p class = "ce_little_titles">Expected Guests:</p>
+                            </div>
+                            <div class = "gr_fields">
+                            <span>
+                                <label for = "ce_min_guests" class = "ce_little_titles">
+                                    Minimum:
+                                    <input type="text" class = "ce_min_guests ce" placeholder="0">
+                                </label>
+                            </span>
+                            <span><p>-</p></span>
+                            <span>
+                                <label for = "ce_max_guests" class = "ce_little_titles">
+                                    Maximum:
+                                    <input type="text" class = "ce_max_guests ce" placeholder="0">
+                                </label>
+                            </div>
+                            </span>
+                        </div>
+                        <div class = "ce_budget_allocation">
+                            <div class="ba_title">
+                                <p class = "ce_little_titles">Allocated Budget:</p>
+                            </div>
+                            <div class="ba_field">
+                                <input type = "range" class = "ce_range_allocator" min = "1", max = "50000", value = "1">
+                                <input type= "text" class = "ce_range_allocator_text" placeholder = "0">
+                            </div>
+                        </div>
+                        <div class="buttons_">
+                            <button class = "butt ce_butt_find_location">Find Location</button>
+                            <button class = "butt ce_butt_submit_event">Submit Event</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class = "mc_location_display">
+                        <p class = "ce_title main_font">Locations</p>
+                        <div class = mc_ld_divider></div>
+                        <div class = "mc_ld_table">
+                            <table>
+                                        <tr>
+                                            <th>Location Name</th>
+                                            <th>Distance</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Location Sample 1</td>
+                                            <td>1km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Location Sample 2</td>
+                                            <td>2km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Location Sample 3</td>
+                                            <td>3km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Location Sample 4</td>
+                                            <td>4km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Location Sample 5</td>
+                                            <td>5km</td>
+                                        </tr>
+                            </table>
+                        </div>
+                        <div class = "buttonss">
+                            <button class = "but bluebut">View Direction from Location</button>
+                            <button class = "but normbut">View Map using Google Maps</button>
+                            <button class = "but normbut">Choose Location</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script script="main_page.js"></script>
+</html>
